@@ -1,0 +1,88 @@
+form {
+    margin-top: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f4f1de;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+form .ng-invalid.ng-touched{
+    border-bottom: 4px solid #b31938;
+}
+
+.ng-valid.ng-touched {
+    border-bottom: 4px solid #88dab2;
+}
+
+form.ng-valid.ng-touched {
+    border: none;
+}
+
+.error-msg {
+    margin-top: 0.3rem;
+    color: #b31938;
+    font-size: 0.85rem;
+}
+
+form div {
+    min-height: 5rem;
+    width: 100%;
+}
+
+input, 
+textarea {
+    padding: 0.5rem 0.6rem;
+    border: 1px solid #3338;
+}
+
+input {
+    width: 100%;
+    border-bottom: 3px solid #3338;
+    border-radius: 4px 4px 1px 1px;
+}
+
+#content-div {
+    min-height: 16rem;
+    margin-bottom: 1.2rem;
+}
+
+#content {
+    border-radius: 6px 6px 2px 6px;
+}
+
+#content .ng-invalid.ng-touched {
+    border: 2px solid #b31938;
+}
+
+button {
+    border: none;
+    padding: 0.7rem 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #7fa090;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #fffffe;
+    transition: all 200ms ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+button:hover {
+    filter: saturate(150%);
+}
+
+button:active {
+    filter: saturate(200%);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+button.disabled {
+    cursor:auto;
+    background-color: #6c7571;
+    color: #c0c2bf;
+}

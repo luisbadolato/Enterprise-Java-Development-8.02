@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    /* background-color: #81b29a;
+    background-color: #e07a5f;
+    background-color: #3d405b;
+    background-color: #f2cc8f;
+    background-color: #f4f1de; */
+    background-color: #335c67;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+h1 {
+    margin-top: 8rem;
+    text-align: center;
+    
+    font-family: 'Lobster';
+    font-size: 3.4rem;
+    text-shadow: 4px 3px 3px #0006, 0px 3px 8px #0002;
+    color: #f4f1de;
+}

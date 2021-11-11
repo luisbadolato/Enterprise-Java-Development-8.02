@@ -1,0 +1,24 @@
+<form (ngSubmit)="onSubmit()" #form="ngForm">
+    <div>
+        <input type="text" placeholder="Name" [(ngModel)]="contact.name" required name="name" #name="ngModel" maxlength="30" [disabled]="form.submitted">
+        <p class="error-msg" *ngIf="name.invalid && name.touched">Please enter a valid name</p>
+    </div>
+    <div>
+        <input type="text" placeholder="Occupation" [(ngModel)]="contact.occupation" name="occupation" #occupation="ngModel" [disabled]="form.submitted">
+    </div>
+    <div>
+        <input type="text" placeholder="Email" [(ngModel)]="contact.email" required email name="email" #email="ngModel" [disabled]="form.submitted">
+        <p class="error-msg" *ngIf="email.invalid && email.touched">Please enter a valid email</p>
+    </div>
+    <div>
+        <input type="text" placeholder="Subject" [(ngModel)]="contact.subject" required name="subject" #subject="ngModel" [disabled]="form.submitted">
+      <p class="error-msg" *ngIf="subject.invalid && (subject.touched || subject.dirty)">Please enter a valid subject</p>
+    </div>
+    <div id="content-div">
+        <textarea [(ngModel)]="contact.content" required name="content" #content="ngModel" id="content" cols="30" rows="10" minlength="10" maxlength="255" [disabled]="form.submitted"></textarea>
+        <p class="error-msg" *ngIf="content.invalid && (content.touched || content.dirty)">Content must be between 10 and 255 characters</p>
+    </div>
+  
+    <button [ngClass]="{'disabled': isDisabled || form.invalid }" type="submit" [disabled]="form.submitted">Submit</button>
+  
+  </form>
